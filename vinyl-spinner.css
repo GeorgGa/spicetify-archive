@@ -6,8 +6,17 @@
     transform: rotate(360deg);
   }
 }
-.cover-art {
+.Root__top-container:has(button[data-testid="control-button-playpause"][aria-label="Pause"])
+  .cover-art {
   animation: rotating 1.8s linear infinite;
+  animation-play-state: running;
+  clip-path: circle(50% at 50% 50%);
+  position: relative;
+}
+.Root__top-container:has(button[data-testid="control-button-playpause"][aria-label="Play"])
+  .cover-art {
+  animation: rotating 1.8s linear infinite;
+  animation-play-state: paused;
   clip-path: circle(50% at 50% 50%);
   position: relative;
 }
