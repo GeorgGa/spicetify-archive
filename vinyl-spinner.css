@@ -7,7 +7,7 @@
   }
 }
 .cover-art {
-  animation: rotating 360s linear infinite;
+  animation: rotating 1.8s linear infinite;
   clip-path: circle(50% at 50% 50%);
   position: relative;
 }
