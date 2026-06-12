@@ -6,20 +6,22 @@
     transform: rotate(360deg);
   }
 }
-.Root__top-container:has(button[data-testid="control-button-playpause"][aria-label="Pause"])
-  .cover-art {
+
+.Root__top-container:has(button[data-testid="control-button-playpause"][aria-label="Pause"]) .cover-art,
+.Root__top-container:has(button[data-testid="control-button-playpause"][aria-label="Play"]) .cover-art {
   animation: rotating 1.8s linear infinite;
+  clip-path: circle(50% at 50% 50%);
+  position: relative;
+}
+
+.Root__top-container:has(button[data-testid="control-button-playpause"][aria-label="Pause"]) .cover-art {
   animation-play-state: running;
-  clip-path: circle(50% at 50% 50%);
-  position: relative;
 }
-.Root__top-container:has(button[data-testid="control-button-playpause"][aria-label="Play"])
-  .cover-art {
-  animation: rotating 1.8s linear infinite;
+
+.Root__top-container:has(button[data-testid="control-button-playpause"][aria-label="Play"]) .cover-art {
   animation-play-state: paused;
-  clip-path: circle(50% at 50% 50%);
-  position: relative;
 }
+
 .cover-art::after {
   content: "";
   position: absolute;
@@ -49,6 +51,7 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) inset,
     0 0 20px rgba(255, 255, 255, 0.1);
 }
+
 .cover-art::before {
   content: "";
   position: absolute;
@@ -62,6 +65,7 @@
   box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
   z-index: 1;
 }
+
 .main-nowPlayingBar-left button {
   background: transparent;
 }
