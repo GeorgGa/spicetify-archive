@@ -7,6 +7,8 @@
   }
 }
 
+.LucidFullscreenPortal > .fullscreen-content:has(button[class="l-btn l-btn--glass l-btn--icon l-btn"][aria-label="Pause"]) .player-widget__image,
+.LucidFullscreenPortal > .fullscreen-content:has(button[class="l-btn l-btn--glass l-btn--icon l-btn"][aria-label="Play"]) .player-widget__image,
 .Root__top-container:has(button[data-testid="control-button-playpause"][aria-label="Pause"]) .player-widget__image,
 .Root__top-container:has(button[data-testid="control-button-playpause"][aria-label="Play"]) .player-widget__image {
   animation: rotating 1.8s linear infinite;
@@ -14,10 +16,12 @@
   position: relative;
 }
 
+.LucidFullscreenPortal > .fullscreen-content:has(button[class="l-btn l-btn--glass l-btn--icon l-btn"][aria-label="Pause"]) .player-widget__image,
 .Root__top-container:has(button[data-testid="control-button-playpause"][aria-label="Pause"]) .player-widget__image {
   animation-play-state: running;
 }
 
+.LucidFullscreenPortal > .fullscreen-content:has(button[class="l-btn l-btn--glass l-btn--icon l-btn"][aria-label="Play"]) .player-widget__image,
 .Root__top-container:has(button[data-testid="control-button-playpause"][aria-label="Play"]) .player-widget__image {
   animation-play-state: paused;
 }
