@@ -7,10 +7,8 @@
   }
 }
 
-.LucidFullscreenPortal > .fullscreen-content:has(button[aria-label="Pause"]) .player-widget__image,
-.LucidFullscreenPortal > .fullscreen-content:has(button[aria-label="Play"]) .player-widget__image,
-.Root__top-container:has(button[data-testid="control-button-playpause"][aria-label="Pause"]) .player-widget__image,
-.Root__top-container:has(button[data-testid="control-button-playpause"][aria-label="Play"]) .player-widget__image {
+.LucidFullscreenPortal > .fullscreen-content:has(button[aria-label="Pause"], button[aria-label="Play"]) .player-widget__image,
+.Root__top-container:has(button[data-testid="control-button-playpause"][aria-label="Pause"], button[data-testid="control-button-playpause"][aria-label="Play"]) .player-widget__image {
   animation: rotating 1.8s linear infinite;
   clip-path: circle(50% at 50% 50%);
   position: relative;
