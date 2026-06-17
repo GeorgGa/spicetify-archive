@@ -1,5 +1,5 @@
 # spicetify-archive
-> Some of my Spicetify snippets and other configuration changes
+> Some of my Spicetify snippets and other configuration modifications
 
 ## Snippets
 - [vinyl-spinner](https://github.com/georgga/spicetify-archive/blob/main/vinyl-spinner.css): Makes album art spin as fast as a Vinyl record, only while a song is actually playing
