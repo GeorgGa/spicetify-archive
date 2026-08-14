@@ -411,6 +411,11 @@ button[aria-label="Marketplace"]
  {
     color: currentColor !important;
 }
+
+/* change the  :hover style of buttons from the default Spotify green to a defined theme color */
+.encore-dark-theme .encore-bright-accent-set {
+  --background-highlight: var(--spice-button) !important;
+}
 '''
 preview = ""
 
